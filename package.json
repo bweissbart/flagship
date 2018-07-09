@@ -28,8 +28,6 @@
     "ship:run-ios": "run-p ship:run-bundler tsc:watch ship:compile-ios",
     "ship:run-android": "run-p ship:run-bundler tsc:watch ship:compile-android",
     "ship:run-bundler": "lerna run --stream --scope @brandingbrand/pirateship start",
-    "ship:add-keys-android": "lerna run --stream --scope @brandingbrand/pirateship add-keys-android",
-    "ship:add-keys-ios": "lerna run --stream --scope @brandingbrand/pirateship add-keys-ios",
     "ship:build-ios": "lerna run --stream --scope @brandingbrand/pirateship build-ios",
     "ship:compile-ios": "lerna run --stream --scope @brandingbrand/pirateship compile-ios",
     "ship:compile-android": "lerna run --stream --scope @brandingbrand/pirateship compile-android",
