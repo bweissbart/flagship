@@ -13,7 +13,7 @@ if [[ ${PIRATESHIP_CHANGED} == "0" ]]; then
     pod --version
     pod repo update
 
-    yarn
+    yarn prepare
     yarn ship:init ios
 
     mkdir -p $HOME/Library/MobileDevice/Provisioning\ Profiles/
