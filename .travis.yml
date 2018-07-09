@@ -47,6 +47,8 @@ jobs:
     - yarn ship:init
     - yarn ship:compile-android || travis_terminate 1
   - language: objective-c
+    env:
+    - KEY_CHAIN=ios-build.keychain
     os: osx
     osx_image: xcode9.4
     before_install:
