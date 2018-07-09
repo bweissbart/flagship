@@ -55,6 +55,8 @@ jobs:
     - node --version
     - yarn --version
     script:
+    - yarn prepare
+    - yarn ship:init
     - yarn ship:build-ios
   - stage: deploy
     if: branch = master AND head_branch IS blank
