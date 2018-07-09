@@ -55,9 +55,7 @@ jobs:
     - node --version
     - yarn --version
     script:
-    - yarn prepare
-    - yarn ship:init
-    - yarn ship:compile-ios || travis_terminate 1
+    - yarn ship:build-ios
   - stage: deploy
     if: branch = master AND head_branch IS blank
     before_install: npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN} -q
