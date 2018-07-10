@@ -12,18 +12,18 @@ install:
 - yarn --silent --non-interactive --ignore-scripts
 jobs:
   include:
-  - script: commitlint-travis || travis_terminate 1
+  - script: commitlint-travis
   - before_install: yarn global add greenkeeper-lockfile@1
     before_script: greenkeeper-lockfile-update
-    script: yarn prepare || travis_terminate 1
+    script: yarn prepare
     after_script: greenkeeper-lockfile-upload
   - script:
     - yarn prepare:fscodestyle
-    - yarn lint || travis_terminate 1
-  - script: yarn test --coverage --ci && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js || travis_terminate 1
+    - yarn lint
+  - script: yarn test --coverage --ci && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
   - script:
     - yarn prepare
-    - yarn build:storybook || travis_terminate 1
+    - yarn build:storybook
   - language: android
     android:
       components:
@@ -47,7 +47,7 @@ jobs:
     script:
     - yarn prepare
     - yarn ship:init
-    - yarn ship:compile-android || travis_terminate 1
+    - yarn ship:compile-android
   - stage: compile
     if: type = pull_request
     language: objective-c
@@ -61,7 +61,7 @@ jobs:
     script:
     - yarn prepare
     - yarn ship:init
-    - yarn ship:compile-ios || travis_terminate 1
+    - yarn ship:compile-ios
   - stage: build
     if: type = push
     language: objective-c
