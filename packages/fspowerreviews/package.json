@@ -1,7 +1,11 @@
 {
   "name": "@brandingbrand/fspowerreviews",
   "sideEffects": false,
+<<<<<<< HEAD
   "version": "3.2.0",
+=======
+  "version": "3.1.1",
+>>>>>>> feat: implement react native 0.59
   "description": "Power Reviews Data Source",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,8 +15,13 @@
     "tsc:watch": "tsc -w --preserveWatchOutput"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@brandingbrand/fscommerce": "^3.2.0",
     "@brandingbrand/fsnetwork": "^3.2.0"
+=======
+    "@brandingbrand/fscommerce": "^3.1.1",
+    "@brandingbrand/fsnetwork": "^3.1.1"
+>>>>>>> feat: implement react native 0.59
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

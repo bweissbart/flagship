@@ -1,7 +1,11 @@
 {
   "name": "@brandingbrand/fscommerce",
   "sideEffects": false,
+<<<<<<< HEAD
   "version": "3.2.0",
+=======
+  "version": "3.1.1",
+>>>>>>> feat: implement react native 0.59
   "description": "Commerce Data Layer for Flagship",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,14 +15,20 @@
     "tsc:watch": "tsc -w --preserveWatchOutput"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@brandingbrand/fsengage": "^3.2.0",
     "@brandingbrand/fsfoundation": "^3.2.0",
     "@brandingbrand/fsnetwork": "^3.2.0",
+=======
+    "@brandingbrand/fsengage": "^3.1.1",
+    "@brandingbrand/fsfoundation": "^3.1.1",
+    "@brandingbrand/fsnetwork": "^3.1.1",
+>>>>>>> feat: implement react native 0.59
     "decimal.js": "^10.0.1",
     "lodash-es": "^4.17.10",
     "qs": "^6.7.0",
-    "react": "16.6.3",
-    "react-native": "0.57.8",
+    "react": "16.8.3",
+    "react-native": "0.59.10",
     "react-native-cookies": "^3.3.0",
     "react-native-sensitive-info": "^5.1.0"
   },
