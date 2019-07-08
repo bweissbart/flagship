@@ -2,11 +2,7 @@
   "name": "@brandingbrand/fsweb",
   "sideEffects": false,
   "license": "MIT",
-<<<<<<< HEAD
   "version": "3.2.0",
-=======
-  "version": "3.1.1",
->>>>>>> feat: implement react native 0.59
   "scripts": {
     "clean": "rm -rf ./build/static && rm -f ./build/index.html && rm -f ./build/service-worker.js && rm -f ./build/asset-manifest.json",
     "build": "webpack --mode production",
